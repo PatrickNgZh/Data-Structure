@@ -1,0 +1,8 @@
+﻿  UnionFindSetcpp.cpp
+  kruskal.cpp
+c:\users\peicong\desktop\data structure\data structure\data structure\kruskal.cpp(19): error C2065: “x”: 未声明的标识符
+c:\users\peicong\desktop\data structure\data structure\data structure\kruskal.cpp(20): error C2065: “x”: 未声明的标识符
+c:\users\peicong\desktop\data structure\data structure\data structure\kruskal.cpp(22): error C2065: “x”: 未声明的标识符
+c:\users\peicong\desktop\data structure\data structure\data structure\kruskal.cpp(28): error C2065: “x”: 未声明的标识符
+c:\users\peicong\desktop\data structure\data structure\data structure\kruskal.cpp(30): error C2065: “x”: 未声明的标识符
+  正在生成代码...
