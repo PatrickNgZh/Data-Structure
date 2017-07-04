@@ -13,4 +13,16 @@ public class Sort {
 			array[min]=temp;
 		}
 	}
+	
+	public static void insertSort(int []array) {
+		for (int i = 2; i <= array.length; i++) {
+			int temp = array[i];
+			int seat = i;
+			while (seat > 1 && temp < array[seat - 1]) {
+				array[seat] = array[seat - 1];
+				seat--;
+			}
+			array[seat] = temp;
+		}
+	}
 }
