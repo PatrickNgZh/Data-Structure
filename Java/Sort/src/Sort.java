@@ -15,14 +15,14 @@ public class Sort {
 	}
 	
 	public static void insertSort(int[] array) {
-		for (int i = 2; i <= array.length; i++) {
+		for (int i = 0; i < array.length; i++) {
 			int temp = array[i];
-			int seat = i;
-			while (seat > 1 && temp < array[seat - 1]) {
-				array[seat] = array[seat - 1];
+			int seat = i-1;
+			while (seat >= 0 && temp < array[seat]) {
+				array[seat+1] = array[seat];
 				seat--;
 			}
-			array[seat] = temp;
+			array[seat+1] = temp;
 		}
 	}
 	
