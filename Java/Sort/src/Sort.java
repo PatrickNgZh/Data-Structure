@@ -30,16 +30,16 @@ public class Sort {
 		int flag,temp;
 		for (int i = array.length-1; i >= 1; i--) {
 			flag = 0;
-			for (int j = 1; j <= i-1; j++) {
-				if(array[j-1]<array[j]) {
+			for (int j = 1; j <= i; j++) {
+				if(array[j-1]>array[j]) {
 					temp=array[j];
 					array[j]=array[j-1];
-					array[j]=temp;
+					array[j-1]=temp;
 					flag=1;
 				}
-				if(flag==0) {
-					return;
-				}
+			}
+			if(flag==0) {
+				return;
 			}
 		}
 	}
