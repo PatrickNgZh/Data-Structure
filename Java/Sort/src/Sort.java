@@ -1,16 +1,16 @@
+import java.util.Collections;
+import java.util.List;
 
 public class Sort {
-	public static void selectSort(int[] array) {
-		for (int i = 0; i < array.length; i++) {
+	public static void selectSort(List<Integer> array) {
+		for (int i = 0; i < array.size(); i++) {
 			int min = i;
-			for (int j = i; j < array.length; j++) {
-				if(array[min]>array[j]) {
+			for (int j = i; j < array.size(); j++) {
+				if(array.get(min)>array.get(j)) {
 					min = j;
 				}
 			}
-			int temp=array[i];
-			array[i]=array[min];
-			array[min]=temp;
+			Collections.swap(array,i,min);
 		}
 	}
 	
